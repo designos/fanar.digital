@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="x-icon" href="images/icon-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   
+    <script src="https://kit.fontawesome.com/413dc40d74.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EMAIL JS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "hJDc5xXOu2sMU4h_2",
+        });
+        })();
+    </script>
+    <!--// EMAIL JS //-->
+    
+    <!-- ALERT -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.13.2/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.13.2/dist/sweetalert2.min.css
+    " rel="stylesheet">
+    <!--// ALERT //-->
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css" integrity="sha512-Kd+SEhBK155eAi26GMJymGkvztAnpEGA/PsJc9OKxRwkhJGblvtVv5Fv1R8zYvPq7dbsy+3o4QJco6hzBdxVjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--// ANIMATION //-->
+    
+    <title>فنار ديجيتال</title>
+
+</head>
+<body dir="rtl">
+
+    <!-- HEADER --> 
+    <header style="background: url(./images/hero-section-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    ">
+
+        <div class="container">
+
+            <div id="navbar" class="columns">
+
+                <div class="col1" data-aos="fade-down">
+
+                    <ul>
+
+                        <select id="language-select">
+                            <option selected data-i18n="arabic" value="./index.html"><a href="">
+                                العربية
+                            </a></option>
+                        <option data-i18n="english" value="./home.html"><a href="">
+                                English
+                            </a></option>
+                        <option data-i18n="english" value="./index2.html"><a href="">
+                                Turkish
+                            </a></option>
+                    </select>
+
+                        <li><a href="#contact-us">أتصل بنا</a></li>
+                        <li><a href="#portfolio">أعمالنا</a></li>
+                        <li><a href="#our-services">خدماتنا</a></li>
+                        <li><a href="#who-we-are">من نحن</a></li>
+                        <li><a href="#">الرئيسية</a></li>
+
+                    </ul>
+
+                    <div class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+
+                <div class="col2" data-aos="fade-down">
+
+                    <a href="#"><img src="./images/Logo-01.png" alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-section">
+
+            <div class="containerr">
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-right">
+                        <img id="pentool-image" class="shake-slow shake-constant shake-constant--hover" src="images/Pentool-01.png" alt="">
+                        <img id="fanar-image" src="./images/fanar-image-01.png" alt="">
+                    </div>
+
+                    <div class="col2" data-aos="fade-left">
+                        <h1>فنار ديجيتال</h1>
+                        <p>وجــهـتـــك الأمـثـل للإبـــداع</p>
+                        <p>فـي <span class="changing-text"></span></p>
+                        <p>لنحول رؤيتك إلى واقع مذهل</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+        <!--// HEADER //-->
+
+        <!-- WHO WE ARE -->
+         
+        <section id="who-we-are">
+
+            <div class="container">
+
+                <h1>
+
+                    من نحن؟
+
+                </h1>
+
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-right">
+
+                        <p id="paragraph">
+                            منصة تعليمية وفنية تجمع بين الإبداع والمعرفة، حيث يمكنك تعلم واكتساب مهارات جديدة في مكان واحد, احصل على محتوى مميز وقيم من خبراء المجالات الرقمية.
+                        </p>
+                    
+                        <!-- المحتوى الإضافي المخفي -->
+                        <div id="extraContent" style="display: none;">
+                            <p><span style="color: #00d8ae;">في عالم يتسارع فيه التطور التكنولوجي والإبداعي،</span> توفر منصتنا لك البيئة المثالية لمواكبة هذا التقدم. نقدم لك محتوى متجدد ومتخصص في مختلف المجالات الرقمية</p>
+                            <!-- زر اقرأ المزيد يظهر تحت النص الإضافي بعد الضغط -->
+                            <button id="read-more" class="read-more-btn">إخفاء النص</button>
+                        </div>
+                    
+                        <!-- زر اقرأ المزيد يظهر في البداية فقط -->
+                        <button id="show-more" class="read-more-btn">
+                            اقرأ المزيد..
+                        </button>
+                    
+                    </div>
+
+
+                    <div class="col2" data-aos="fade-left">
+
+                        <img id="img" src="./images/who-we-are-image-01.png" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--// WHO WE ARE //-->
+
+        <!-- PROFILE SECTION -->
+
+        <section id="prfoile-section">
+
+
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-right">
+
+                        <h3>قـريـبـاً</h3>
+                        <p>
+                            يسرنا أن نعلن أن بروفايل فنار ديجيتال سيصدر قريباً، حاملاً في طياته تفاصيل شاملة عن خدماتنا المتميزة وإنجازاتنا في عالم التصميم الرقمي. سيُقدّم البروفايل نبذة عن رؤيتنا ورسالتنا، بالإضافة إلى استعراض لأهم المشاريع التي نفذناها والأدوات التي نستخدمها لتحويل أفكار عملائنا إلى تجارب رقمية مبهرة. ترقبوا الإصدار القادم لاكتشاف المزيد عن فنار ديجيتال وكيف يمكننا مساعدتكم في تحقيق رؤاكم الإبداعية.
+                        </p>
+
+                        <button disabled id="profile-download-btn">
+                            بإمكانك تحميل الملف قريباً
+                        </button>
+
+                    </div>
+
+                    <div class="col2" data-aos="fade-left">
+
+                        <img src="./images/Profile Frontside Mockup.png" alt="">
+
+                    </div>
+
+                </div>
+
+
+        </section>
+
+        <!--// PROFILE SECTION //-->
+
+        <!-- SERVICES -->
+
+        <section id="services">
+
+            <div class="container">
+
+                <h1 id="our-services">
+                    خدماتنا
+                </h1>
+
+                <div class="cards">
+
+                    <div class="content" data-aos="fade-up">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                        </div>
+                        <h1 id="design">التصميم الجرافيكي</h1>
+                        <p>
+                            تقدم فنار ديجيتال خدمات تصميم الجرافيك بشكل احترافي ومبتكر لتلبية احتياجات الأفراد والشركات. تشمل الخدمات تصميم الشعارات، والهويات البصرية، والمواد الدعائية، وتصميمات وسائل التواصل الاجتماعي.
+                        </p>
+                    </div>
+
+                    <div class="content" data-aos="fade-up">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                        <h1>تحرير الفيديو</h1>
+                        <p>
+                            تقدم فنار ديجيتال خدمة تحرير الفيديو  بشكل احترافي ومبتكر لتلبية احتياجات الأفراد والشركات. تشمل الخدمات تحرير الفيديوهات الدعائية، والترويجية، والتعليمية، وفيديوهات وسائل التواصل الاجتماعي.
+                        </p>
+                    </div>
+
+                    <div class="content" data-aos="fade-up">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                        <h1>تطوير المواقع</h1>
+                        <p>
+                            تقدم فنار ديجيتال خدمة تطوير المواقع بشكل احترافي لتلبية احتياجات الأفراد والشركات. تشمل الخدمة تصميم مواقع مخصصة وجذابة، تطوير مواقع تفاعلية وتجارية، تحسين تجربة المستخدم.
+                        </p>
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+        <!--// SERVICES //-->
+
+        <!-- PORTFOLIO -->
+
+        <section id="portfolio">
+
+            <div class="container">
+
+                <div class="content" data-aos="fade-up">
+                    <h1>أعمالنا</h1>
+                    <p>في فنار ديجيتال، نفخر بتقديم حلول رقمية مبتكرة وعالية الجودة لعملائنا من مختلف الصناعات. يشمل معرض أعمالنا مجموعة واسعة من المشاريع التي تعكس خبرتنا وتفانينا في تقديم أفضل النتائج. نؤمن بأن كل مشروع هو فرصة لتحقيق تأثير إيجابي ومميز، سواء كان في تصميم المواقع الإلكترونية، أو تصميم الهويات البصرية ، أو تحرير الفديو وتسويق المحتوى الفني</p>        
+                </div>
+
+                <div class="portfolio-cards">
+                    <div id="cards" class="cards">
+
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1IWbDFLrk42f1_X311WZ243Zx-XMzuLzp?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <h3><span style="color: #00d8ae;">انقر</span> لمشاهدة اعمالنا في تطوير المواقع</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1DRE6lN0RQQTugWwxBDP1h1alzaZ4wbjt?usp=sharing">
+                            <div class="card">
+                                <i class="fa-regular fa-eye"></i>
+                                <h3><span style="color: #00d8ae;">انقر</span> لمشاهدة اعمالنا في تصميم الهويات البصرية</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1qhboBAP0Y_c2ITup0G53HNq8bq1H9BQm?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-pen-nib"></i>
+                                <h3><span style="color: #00d8ae;">انقر</span> لمشاهدة اعمالنا في تصميم الشعارات</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/16wdIdZd6siuj84OFVvgNelOBofchHTpJ?usp=sharing">
+                            <div class="card">
+                                <i class="fa-regular fa-object-group"></i>
+                                <h3><span style="color: #00d8ae;">انقر</span> لمشاهدة اعمالنا في تصميم السوشيال ميديا</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1CIkclkMc0inewUqSGFp99eLI-DYwumS2?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-video"></i>
+                                <h3><span style="color: #00d8ae;">انقر</span> لمشاهدة اعمالنا في تحرير الفيديو</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1Zhqw8xB0IjH9q9bt7oPnrLveylZ9RWlH?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-print"></i>
+                                <h3><span style="color: #00d8ae;">انقر</span> لمشاهدة اعمالنا في تصميم المطبوعات</h3>
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--// PORTFOLIO //-->
+
+        <!-- FAQS -->
+
+        <div class="faq-section">
+            <h1 class="faq-title" data-aos="fade-up">الأسئلة الشائعة</h1>
+            <div class="faq-container" data-aos="fade-down">
+                <div class="faq-item">
+                    <div class="faq-question">ما هي الخدمات التي تقدمها فنار ديجيتال؟</div>
+                    <div class="faq-answer">
+                        فنار ديجيتال تقدم مجموعة متكاملة من الخدمات تشمل تصميم الجرافيك، تطوير المواقع الإلكترونية، وتحرير الفيديو.
+                        نحن نعمل مع عملائنا على تحويل أفكارهم إلى واقع ملموس من خلال تصاميم مبتكرة ومواقع ويب عالية الجودة، بالإضافة إلى
+                        إنتاج فيديوهات احترافية تلبي احتياجاتهم التسويقية.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">هل يمكن لفنار ديجيتال تطوير مواقع متجاوبة مع جميع الأجهزة؟</div>
+                    <div class="faq-answer">
+                        نعم، نحن نحرص على تصميم وتطوير مواقع ويب متجاوبة بشكل كامل مع جميع الأجهزة، سواء كانت حواسيب، هواتف ذكية، أو
+                        أجهزة لوحية. الهدف هو ضمان تجربة مستخدم سلسة ومتناسقة على مختلف الأحجام والشاشات.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">كم يستغرق من الوقت لإنجاز مشروعك؟</div>
+                    <div class="faq-answer">
+                        مدة إنجاز المشروع تعتمد على حجمه وتعقيده. عادةً، مشاريع التصميم البسيطة قد تستغرق من 3 أيام إلى أسبوع، بينما قد
+                        تتطلب مشاريع تطوير المواقع المتقدمة وقتًا يتراوح بين أسبوع وأسبوعين. نحرص دائمًا على الالتزام بالجداول الزمنية
+                        المتفق عليها مع عملائنا.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">ما هي الأدوات والبرامج التي تستخدمها فنار ديجيتال؟</div>
+                    <div class="faq-answer">
+                        نحن نستخدم مجموعة متنوعة من الأدوات المتقدمة لضمان تقديم أفضل النتائج لعملائنا. في مجال تصميم الجرافيك، نستخدم
+                        برامج مثل Adobe Photoshop و Illustrator و Indesign لإنشاء تصاميم إبداعية وجذابة. أما في تصميم وتطوير الويب، فنحن نعتمد على
+                        أدوات مثل Adobe XD وWordPress و React JS وHTML و CSS و JavaScript و Bootstrap و Tailwind Css لتطوير مواقع ويب متميزة ومتجاوبة. وفي تحرير الفيديو، نستخدم برامج متقدمة
+                        مثل Adobe Premiere Pro وAdobe After effects وAdobe Media encoder لضمان إنتاج فيديوهات عالية الجودة تعكس رؤى عملائنا بأفضل
+                        صورة ممكنة.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--// FAQS //-->
+
+        <!-- TESTIMONIALS -->
+
+        <section id="testimonials">
+
+            <h1 data-aos="fade-up" id="caption">ماذا قالوا عنا؟</h1>
+
+            <div class="owl-carousel owl-theme" data-aos="fade-down">
+                <div class="testimonial-card">
+                    <h5>محمد السعدي</h5>
+                    <p id="position">مدير التسويق - قطاع التجزئة</p>
+                    <p>عملت مع فريق فنار لتجربة التصميم مجموعة من الأوتوماتيك التسويقية. كان الفريق جدًّا وسريع الاستجابة.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>فاطمة الكعبي</h5>
+                    <p id="position">مديرة مشروع - الريادة</p>
+                    <p>تجربتي مع فنار ديجيتال كانت رائعة من جميع النواحي. احتجنا لتصميم شعار جديد وحملة بصرية متكاملة لمشروعنا. الفريق كان محترفاً جداً وتمكن من تلبية جميع احتياجاتنا بإبداع ودقة. أنا سعيدة جداً بالنتائج.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>سعود البلوشي</h5>
+                    <p id="position">رئيس قسم المبيعات - مؤسسة الفجيرة للتطوير</p>
+                    <p>عملت مع فنار ديجيتال لتصميم هوية بصرية لعدة فعاليات لدينا. فريق العمل كان متعاوناً وقدم لنا تصاميم مبتكرة وجذابة. الخدمة كانت سريعة واحترافية وأنا راضٍ تماماً عن النتائج.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>مها المنصوري</h5>
+                    <p id="position">مسؤولة تسويق رقمي - الابتكار التقني</p>
+                    <p>احتجنا إلى تحديث موقعنا الإلكتروني وإعادة تصميم بعض العناصر البصرية. فريق فنار ديجيتال كان على مستوى التحدي، وقدم لنا تصاميم عصرية تتماشى مع توجهاتنا التسويقية. العمل معهم كان تجربة مريحة وفعالة.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>ناصر الهاشمي</h5>
+                    <p id="position">مدير العلامة التجارية - المستقبل</p>
+                    <p>فنار ديجيتال قدموا لنا خدمة تصميم شعار ومنشورات تسويقية بجودة عالية. كانوا يفهمون تماماً رؤيتنا ويعكسونها بوضوح في التصاميم. التواصل معهم كان سلساً والعمل تم في الوقت المحدد.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".owl-carousel").owlCarousel({
+                        rtl: true, // لتفعيل الاتجاه من اليمين إلى اليسار
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        dots: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 2
+                            },
+                            1000: {
+                                items: 3
+                            }
+                        }
+                    });
+                });
+            </script>
+
+        </section>
+        
+        <!--// TESTIMONIALS //-->
+
+        <!-- BLOG -->
+
+        <section id="prfoile-section" style="background: url(./images/blog-section-bg-01.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 120px;">
+
+
+            <div class="columns">
+
+                <div class="col1" data-aos="fade-left">
+
+                    <h3 id="blog-h">كيف يمكن لخدمات فنار ديجيتال  أن تعزز علامتك التجارية؟</h3>
+                    <p class="blog-p">
+                        في عالم التسويق الرقمي اليوم، أصبحت العلامة التجارية أكثر من مجرد شعار أو اسم. إنها تجربة شاملة تتطلب توحيد جهود التصميم، تطوير الموقع الإلكتروني، وتحرير الفيديو لخلق حضور رقمي قوي ومؤثر. في فنار ديجيتال، نقدم خدمات متكاملة تشمل هذه العناصر الثلاثة لضمان أن علامتك التجارية تتمتع بالتأثير الذي تستحقه. إليك كيف يمكن لهذه الخدمات أن تعزز من قوة علامتك التجارية. 
+                    </p>
+
+                </div>
+
+                <div class="col2" data-aos="fade-right">
+
+                    <img style="border-radius: 30px;" src="./images/Blog-image-01.png" alt="">
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--// BLOG //-->
+
+        <section id="blog-cards">
+
+            <div class="container">
+
+                <h1 data-aos="fade-up">المدونة</h1>
+            
+                <div class="cards">
+    
+                    <div class="card" data-aos="fade-down">
+    
+                        <img src="./images/1-01.png" alt="image">
+                        <h4>الوجه المرئي لعلامتك التجارية</h4>
+                        <p>يُعد التصميم الجرافيكي الأساس الذي تبنى عليه هوية علامتك التجارية. من تصميم الشعارات إلى اختيار الألوان والخطوط، يلعب التصميم الجرافيكي دورًا حيويًا في كيفية رؤية الناس لعلامتك التجارية.</p>
+                        <button>
+                            <a target="_blank" style="text-decoration: none; color: #25272b;" href="https://www.adobe.com/ae_ar/creativecloud/business/teams/use-cases/brand-identity.html">
+                            اقرأ المزيد ..
+                        </a>
+                        </button>
+
+                    </div>
+                    <div class="card" data-aos="fade-down">
+    
+                        <img src="./images/2-01.png" alt="image">
+                        <h4>بناء حضورك الرقمي</h4>
+                        <p>بعد تحديد هويتك البصرية، يأتي دور تطوير الموقع الإلكتروني كمنصة رئيسية لعرض علامتك التجارية. الموقع الإلكتروني ليس فقط وسيلة للتواجد على الإنترنت، بل هو نقطة الاتصال الأساسية بينك وبين جمهورك</p>
+                        <button>
+                            <a target="_blank" style="text-decoration: none; color: #25272b;" href="https://www.adobe.com/ae_ar/creativecloud/business/teams/use-cases/small-business-website.html">
+                            اقرأ المزيد ..
+                        </a>
+                        </button>
+
+                    </div>
+                    <div class="card" data-aos="fade-down">
+    
+                        <img src="./images/3-01.png" alt="image">
+                        <h4>سرد قصتك بطريقة مبتكرة</h4>
+                        <p>الفيديو هو أداة قوية في عالم التسويق الرقمي. سواء كنت تروي قصة علامتك التجارية، تعرض منتجاتك، أو تشارك تجارب عملائك، يمكن للفيديو أن يجذب الانتباه ويخلق ارتباطًا عاطفيًا مع جمهورك.</p>
+                        <button>
+                            <a target="_blank" style="text-decoration: none; color: #25272b;" href="https://www.adobe.com/ae_en/creativecloud/video/discover/edit-a-video.html">
+                                اقرأ المزيد ..
+                            </a>
+                        </button>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact-us">
+
+            <div class="content" data-aos="fade-up">
+                <h1>اترك إستفسارك</h1>
+                <p>هل لديك سؤال أو استفسار؟ أو ربما ترغب في مناقشة مشروعك القادم معنا؟ نحن هنا للاستماع إلى احتياجاتك. اترك لنا رسالة وسنقوم بالرد عليك في أقرب وقت ممكن.</p>        
+            </div>            
+
+            <div class="container">
+
+                <div class="columns">
+
+                    <form action="">
+
+                        <div class="col1" data-aos="fade-left">
+
+                            <input id="full-name" type="text" required placeholder="الاسم الشخصي*">
+                            <input id="project-title" type="text" required placeholder="المشروع*">
+                            <input id="phone-number" type="text" required placeholder="رقم الجوال*">
+
+                            <button onclick="sendMail()">
+                                ارسل استفسارك
+                            </button>
+
+                        </div>
+
+                        <div class="col2" data-aos="fade-right">
+
+                            <textarea id="message" placeholder="تفاصيل المشروع*" required></textarea>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="cards">
+
+                    <div class="card" data-aos="fade-left">
+
+                        <i class="fa-solid fa-square-phone"></i>
+                        <h3>رقم الجوال</h3>
+                        <p style="direction: ltr;"><a href="callto:+90 535 051 98 79">+90 535 051 98 79</a></p>
+
+                    </div>
+                    <div class="card" data-aos="fade-up">
+
+                        <i class="fa-solid fa-square-envelope"></i>
+                        <h3>البريد الإلكتروني</h3>
+                        <p style="direction: ltr;"><a href="mailto:info@fanar.digital">info@fanar.digital</a></p>
+
+                    </div>
+                    <div class="card" data-aos="fade-right">
+
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h3>العنوان</h3>
+                        <p style="direction: ltr;"><a>تركيا - شانلي اورفا</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="container">
+
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-left">
+                        <img src="./images/footer-logo-01.png" alt="">
+                        <p>منصة تعليمية وفنية تجمع بين الإبداع والمعرفة، حيث يمكنك تعلم واكتساب مهارات جديدة في مكان واحد, احصل على محتوى مميز وقيم من خبراء المجالات الرقمية</p>
+                    </div>
+
+                    <div class="col2" data-aos="fade-up">
+                        <ul>
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#who-we-are">من نحن</a></li>
+                            <li><a href="#our-services">خدماتنا</a></li>
+                            <li><a href="#portfolio">أعمالنا</a></li>
+                            <li><a href="#contact-us">أتصل بنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col3" data-aos="fade-right">
+                        <h3>تابعوا  حساباتنا على <br>
+                            التواصل الاجتماعي</h3>
+                        <div class="socialmedia-icons">
+                            <a target="_blank" href="https://www.instagram.com/fanar.digital?igsh=MWQ0a205NWYxZjZjdA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@fanar.digital?_t=8pRFBxVj2uH&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                            <a target="_blank" href="https://snapchat.com/t/4qnB0sxm"><i class="fa-brands fa-snapchat"></i></a>
+                            <a target="_blank" href="https://x.com/fanardigital"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=61560447493591&mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+                            <!-- <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a> -->
+                        </div>
+                        <p>fanar.digital</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div class="copyrights">
+            <i class="fa-regular fa-copyright"></i> جميع الحقوق محفوظة لدى - فنار ديجيتال 2024
+        </div>
+
+    </body>
+
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+            duration: 1500
+        });
+    </script>
+  
+
+</html>

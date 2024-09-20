@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="englishStyles.css">
+    <link rel="shortcut icon" type="x-icon" href="images/icon-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   
+    <script src="https://kit.fontawesome.com/413dc40d74.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EMAIL JS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "hJDc5xXOu2sMU4h_2",
+        });
+        })();
+    </script>
+    <!--// EMAIL JS //-->
+    
+    <!-- ALERT -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.13.2/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.13.2/dist/sweetalert2.min.css
+    " rel="stylesheet">
+    <!--// ALERT //-->
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css" integrity="sha512-Kd+SEhBK155eAi26GMJymGkvztAnpEGA/PsJc9OKxRwkhJGblvtVv5Fv1R8zYvPq7dbsy+3o4QJco6hzBdxVjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--// ANIMATION //-->
+    
+    <title>Fanar Digital</title>
+
+</head>
+<body dir="ltr">
+
+    <!-- HEADER --> 
+    <header style="background: url(./images/hero-section-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    ">
+
+        <div class="container">
+
+            <div id="navbar" class="columns">
+
+                <div class="col1" data-aos="fade-down">
+
+                    <ul>
+
+                        <select id="language-select">
+                            <option data-i18n="arabic" value="./index.html"><a href="">
+                                Arabic
+                            </a></option>
+                        <option selected data-i18n="english" value="./home.html"><a href="">
+                                English
+                            </a></option>
+                        <option data-i18n="english" value="./index2.html"><a href="">
+                                Turkish
+                            </a></option>
+                    </select>
+
+                        <li><a href="#contact-us">Contact us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#our-services">Our services</a></li>
+                        <li><a href="#who-we-are">Who we are</a></li>
+                        <li><a href="#">Home</a></li>
+
+                    </ul>
+
+                    <div class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+
+                <div class="col2" data-aos="fade-down">
+
+                    <a href="#"><img src="./images/Logo-01.png" alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-section">
+
+            <div class="containerr">
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-right">
+                        <img id="pentool-image" class="shake-slow shake-constant shake-constant--hover" src="images/Pentool-01.png" alt="">
+                        <img id="fanar-image" src="./images/english-fanar-image-01.png" alt="">
+                    </div>
+
+                    <div class="col2" data-aos="fade-left">
+                        <h1>Fanar Digital</h1>
+                        <p>Your ideal destination for creativity</p>
+                        <p style="letter-spacing: .5px;">In <span class="changing-text"></span> Let's</p>
+                        <p style="letter-spacing: .5px;">turn vision into a stunning reality</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+        <!--// HEADER //-->
+
+        <!-- WHO WE ARE -->
+         
+        <section id="who-we-are">
+
+            <div class="container">
+
+                <h1>
+
+                    Who we are?
+
+                </h1>
+
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-right">
+
+                        <p style="text-align: left;" id="paragraph">
+                            An educational and artistic platform that combines creativity and knowledge, where you can learn and acquire new skills in one place. Receive exceptional and valuable content from experts in digital fields.
+                        </p>
+                    
+                        <!-- المحتوى الإضافي المخفي -->
+                        <div id="extraContent" style="display: none;">
+                            <p style="font-family: Cairo; text-align: left;"><span style="color: #00d8ae; font-family: Cairo;">In a world where technological and creative development is accelerating,</span> Our platform provides you with the perfect environment to keep up with this progress. We offer fresh and specialized content in various digital fields</p>
+                            <!-- زر اقرأ المزيد يظهر تحت النص الإضافي بعد الضغط -->
+                            <button id="read-more" class="read-more-btn">Hide text</button>
+                        </div>
+                    
+                        <!-- زر اقرأ المزيد يظهر في البداية فقط -->
+                        <button id="show-more" class="read-more-btn">
+                            Read more...
+                        </button>
+                    
+                    </div>
+
+
+                    <div class="col2" data-aos="fade-left">
+
+                        <img id="img" src="./images/who-we-are-image-01.png" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--// WHO WE ARE //-->
+
+        <!-- PROFILE SECTION -->
+
+        <section id="prfoile-section">
+
+
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-right">
+
+                        <h3 style="text-align: left;">Soon!!</h3>
+                        <p style="text-align: left;">
+                            We are pleased to announce that the Fanar Digital profile will be released soon, featuring comprehensive details about our exceptional services and achievements in the world of digital design. The profile will provide an overview of our vision and mission, along with a showcase of our most important projects and the tools we use to turn our clients' ideas into stunning digital experiences. Stay tuned for the upcoming release to discover more about Fanar Digital and how we can help you realize your creative visions.
+                        </p>
+
+                        <button style="text-align: left;" disabled id="profile-download-btn">
+                            You will be able to download the file soon
+                        </button>
+
+                    </div>
+
+                    <div class="col2" data-aos="fade-left">
+
+                        <img src="./images/Profile Frontside Mockup.png" alt="">
+
+                    </div>
+
+                </div>
+
+
+        </section>
+
+        <!--// PROFILE SECTION //-->
+
+        <!-- SERVICES -->
+
+        <section id="services">
+
+            <div class="container">
+
+                <h1 id="our-services">
+                    Our services
+                </h1>
+
+                <div class="cards">
+
+                    <div class="content" data-aos="fade-up">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                        </div>
+                        <h1 id="design">Graphic design</h1>
+                        <p>
+                            Fanar Digital offers professional and innovative graphic design services to meet the needs of individuals and businesses. Our services include logo design, visual identities, promotional materials, and social media designs.
+                        </p>
+                    </div>
+
+                    <div class="content" data-aos="fade-up">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                        <h1>Video editing</h1>
+                        <p>
+                            Fanar Digital provides professional and innovative video editing services to meet the needs of individuals and businesses. Our services include editing promotional, marketing, educational videos, and social media videos.
+                        </p>
+                    </div>
+
+                    <div class="content" data-aos="fade-up">
+                        <div class="card">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                        </div>
+                        <h1>Website development</h1>
+                        <p>
+                            Fanar Digital offers professional website development services to meet the needs of individuals and businesses. Our services include designing custom and attractive websites, developing interactive and commercial sites, and enhancing user experience.
+                        </p>
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+        <!--// SERVICES //-->
+
+        <!-- PORTFOLIO -->
+
+        <section id="portfolio">
+
+            <div class="container">
+
+                <div class="content" data-aos="fade-up">
+                    <h1>Portfolio</h1>
+                    <p>
+                        At Fanar Digital, we take pride in offering innovative and high-quality digital solutions to clients across various industries. Our portfolio showcases a wide range of projects that reflect our expertise and commitment to delivering exceptional results. We believe that every project is an opportunity to make a positive and distinctive impact, whether it's in website design, visual identity design, video editing, or artistic content marketing.
+                    </p>        
+                </div>
+
+                <div class="portfolio-cards">
+                    <div id="cards" class="cards">
+
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1IWbDFLrk42f1_X311WZ243Zx-XMzuLzp?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <h3><span style="color: #00d8ae; font-family: Cairo;">Press</span> To view our work in website development</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1DRE6lN0RQQTugWwxBDP1h1alzaZ4wbjt?usp=sharing">
+                            <div class="card">
+                                <i class="fa-regular fa-eye"></i>
+                                <h3><span style="color: #00d8ae; font-family: Cairo;">Press</span> To view our work in visual identity design</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1qhboBAP0Y_c2ITup0G53HNq8bq1H9BQm?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-pen-nib"></i>
+                                <h3><span style="color: #00d8ae; font-family: Cairo;">Press</span> To view our work in logo design</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/16wdIdZd6siuj84OFVvgNelOBofchHTpJ?usp=sharing">
+                            <div class="card">
+                                <i class="fa-regular fa-object-group"></i>
+                                <h3><span style="color: #00d8ae; font-family: Cairo;">Press</span> To view our work in social media design</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1CIkclkMc0inewUqSGFp99eLI-DYwumS2?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-video"></i>
+                                <h3><span style="color: #00d8ae; font-family: Cairo;">Press</span> To view our work in video editing</h3>
+                            </div>
+                        </a>
+                        <a data-aos="fade-down" target="_blank" href="https://drive.google.com/drive/folders/1Zhqw8xB0IjH9q9bt7oPnrLveylZ9RWlH?usp=sharing">
+                            <div class="card">
+                                <i class="fa-solid fa-print"></i>
+                                <h3><span style="color: #00d8ae; font-family: Cairo;">Press</span> To view our work in print design</h3>
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--// PORTFOLIO //-->
+
+        <!-- FAQS -->
+
+        <div class="faq-section">
+            <h1 class="faq-title" data-aos="fade-up">FAQ</h1>
+            <div dir="ltr" class="faq-container" data-aos="fade-down">
+                <div class="faq-item">
+                    <div class="faq-question">What services does Fanar Digital offer?</div>
+                    <div class="faq-answer">
+                        Fanar Digital offers a comprehensive range of services, including graphic design, website development, and video editing. We work with our clients to turn their ideas into tangible reality through innovative designs, high-quality websites, and professional videos that meet their marketing needs.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can Fanar Digital develop responsive websites for all devices?</div>
+                    <div class="faq-answer">
+                        Yes, we ensure that we design and develop fully responsive websites for all devices, including computers, smartphones, and tablets. Our goal is to provide a seamless and consistent user experience across different screen sizes and devices.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does it take to complete a project?</div>
+                    <div class="faq-answer">
+                        The duration of a project depends on its size and complexity. Typically, simple design projects may take between 3 days to a week, while more advanced website development projects may require between one to two weeks. We always strive to adhere to the agreed-upon timelines with our clients.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What tools and software does Fanar Digital use?</div>
+                    <div class="faq-answer">
+                        We use a variety of advanced tools to ensure we deliver the best results for our clients. In graphic design, we utilize software such as Adobe Photoshop, Illustrator, and InDesign to create creative and compelling designs. For web design and development, we rely on tools like Adobe XD, WordPress, React JS, HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS to build exceptional and responsive websites. In video editing, we use advanced programs like Adobe Premiere Pro, Adobe After Effects, and Adobe Media Encoder to produce high-quality videos that reflect our clients' visions in the best possible way.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--// FAQS //-->
+
+        <!-- TESTIMONIALS -->
+
+        <section id="testimonials">
+
+            <h1 data-aos="fade-up" id="caption">What they said about us?</h1>
+
+            <div class="owl-carousel owl-theme" data-aos="fade-down">
+                <div class="testimonial-card">
+                    <h5>Mohamed Al-Saadi</h5>
+                    <p id="position">Marketing Manager - Retail Sector</p>
+                    <p>I worked with the Fanar team on designing a range of marketing automations. The team was very responsive and quick.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>Fatima Al-Kaabi</h5>
+                    <p id="position">Project Manager - Entrepreneurship</p>
+                    <p>My experience with Fanar Digital was excellent in every way. We needed a new logo design and a complete visual campaign for our project. The team was very professional and managed to meet all our needs with creativity and precision. I am very pleased with the results.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>Saud Al-Balushi</h5>
+                    <p id="position">Sales Manager - Fujairah Development Corporation</p>
+                    <p>I worked with Fanar Digital to design visual identities for several of our events. The team was collaborative and provided us with innovative and attractive designs. The service was prompt and professional, and I am completely satisfied with the results.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>Maha Al-Mansoori</h5>
+                    <p id="position">Digital Marketing Manager - Technological Innovation
+                    </p>
+                    <p>We needed to update our website and redesign some visual elements. The Fanar Digital team rose to the challenge and provided us with modern designs that align with our marketing direction. Working with them was a smooth and effective experience.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+                <div class="testimonial-card">
+                    <h5>Nasser Al-Hashimi</h5>
+                    <p id="position">Brand Manager - Al-Mustaqbal</p>
+                    <p>Fanar Digital provided us with high-quality logo design and marketing materials. They fully understood our vision and clearly reflected it in the designs. Communication was smooth, and the work was completed on time.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".owl-carousel").owlCarousel({
+                        rtl: true, // لتفعيل الاتجاه من اليمين إلى اليسار
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        dots: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 2
+                            },
+                            1000: {
+                                items: 3
+                            }
+                        }
+                    });
+                });
+            </script>
+
+        </section>
+        
+        <!--// TESTIMONIALS //-->
+
+        <!-- BLOG -->
+
+        <section id="prfoile-section" style="background: url(./images/blog-section-bg-01.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 120px;">
+
+
+            <div class="columns">
+
+                <div class="col1" data-aos="fade-left">
+
+                    <h3 style="text-align: left;" id="blog-h">How can Fanar Digital's services enhance your brand?</h3>
+                    <p style="text-align: left;" class="blog-p">
+                        In today’s digital marketing world, branding is more than just a logo or name. It’s a comprehensive experience that requires integrating design, website development, and video editing to create a strong and impactful digital presence. At Fanar Digital, we offer integrated services that encompass these three elements to ensure your brand achieves the impact it deserves. Here’s how these services can enhance your brand’s strength. 
+                    </p>
+
+                </div>
+
+                <div class="col2" data-aos="fade-right">
+
+                    <img style="border-radius: 30px;" src="./images/Blog-image-01.png" alt="">
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--// BLOG //-->
+
+        <section id="blog-cards">
+
+            <div class="container">
+
+                <h1 data-aos="fade-up">Blog</h1>
+            
+                <div class="cards">
+    
+                    <div class="card" data-aos="fade-down">
+    
+                        <img src="./images/1-01.png" alt="image">
+                        <h4>The visual face of your brand</h4>
+                        <p>Graphic design is the foundation upon which your brand identity is built. From logo design to color and font choices, graphic design plays a crucial role in shaping how people perceive your brand.</p>
+                        <button>
+                            <a target="_blank" style="text-decoration: none; color: #25272b;" href="https://www.adobe.com/ae_ar/creativecloud/business/teams/use-cases/brand-identity.html">
+                                Read more...
+                        </a>
+                        </button>
+
+                    </div>
+                    <div class="card" data-aos="fade-down">
+    
+                        <img src="./images/2-01.png" alt="image">
+                        <h4>Building your digital presence</h4>
+                        <p>After defining your visual identity, website development takes center stage as the primary platform to showcase your brand. Your website is not just a means of having an online presence; it is the main point of contact between you and your audience.</p>
+                        <button>
+                            <a target="_blank" style="text-decoration: none; color: #25272b;" href="https://www.adobe.com/ae_ar/creativecloud/business/teams/use-cases/small-business-website.html">
+                                Read more...
+                        </a>
+                        </button>
+
+                    </div>
+                    <div class="card" data-aos="fade-down">
+    
+                        <img src="./images/3-01.png" alt="image">
+                        <h4>Tell your story in an innovative way</h4>
+                        <p>Video is a powerful tool in digital marketing. Whether you’re telling your brand’s story, showcasing your products, or sharing customer experiences, video can capture attention and create an emotional connection with your audience.
+                        </p>
+                        <button>
+                            <a target="_blank" style="text-decoration: none; color: #25272b;" href="https://www.adobe.com/ae_en/creativecloud/video/discover/edit-a-video.html">
+                                Read more...
+                            </a>
+                        </button>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact-us">
+
+            <div class="content" data-aos="fade-up">
+                <h1>Leave your inquiry</h1>
+                <p>Do you have a question or inquiry? Or perhaps you’d like to discuss your upcoming project with us? We’re here to listen to your needs. Leave us a message, and we’ll get back to you as soon as possible.</p>        
+            </div>            
+
+            <div class="container">
+
+                <div class="columns">
+
+                    <form action="">
+
+                        <div class="col1" data-aos="fade-left">
+
+                            <input id="full-name" type="text" required placeholder="Full name*">
+                            <input id="project-title" type="text" required placeholder="Project title*">
+                            <input id="phone-number" type="text" required placeholder="Phone number*">
+
+                            <button onclick="sendMail()">
+                                Send your inquiry
+                            </button>
+
+                        </div>
+
+                        <div class="col2" data-aos="fade-right">
+
+                            <textarea id="message" placeholder="Project details*" required></textarea>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="cards">
+
+                    <div class="card" data-aos="fade-left">
+
+                        <i class="fa-solid fa-square-phone"></i>
+                        <h3>Phone number</h3>
+                        <p style="direction: ltr;"><a href="callto:+90 535 051 98 79">+90 535 051 98 79</a></p>
+
+                    </div>
+                    <div class="card" data-aos="fade-up">
+
+                        <i class="fa-solid fa-square-envelope"></i>
+                        <h3>Email</h3>
+                        <p style="direction: ltr;"><a href="mailto:info@fanar.digital">info@fanar.digital</a></p>
+
+                    </div>
+                    <div class="card" data-aos="fade-right">
+
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h3>Location</h3>
+                        <p style="direction: ltr;"><a>Turkey - Sanliurfa</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="container">
+
+                <div class="columns">
+
+                    <div class="col1" data-aos="fade-left">
+                        <img src="./images/footer-logo-01.png" alt="">
+                        <p>An educational and artistic platform that combines creativity and knowledge, where you can learn and acquire new skills in one place. Get exceptional and valuable content from experts in digital fields.</p>
+                    </div>
+
+                    <div class="col2" data-aos="fade-up">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#who-we-are">Who we are</a></li>
+                            <li><a href="#our-services">Our services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact-us">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col3" data-aos="fade-right">
+                        <h3>Follow us on <br>
+                            Socialmedia</h3>
+                        <div class="socialmedia-icons">
+                            <a target="_blank" href="https://www.instagram.com/fanar.digital?igsh=MWQ0a205NWYxZjZjdA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@fanar.digital?_t=8pRFBxVj2uH&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                            <a target="_blank" href="https://snapchat.com/t/4qnB0sxm"><i class="fa-brands fa-snapchat"></i></a>
+                            <a target="_blank" href="https://x.com/fanardigital"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=61560447493591&mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+                            <!-- <a target="_blank" href=""><i class="fa-solid fa-globe"></i></a> -->
+                        </div>
+                        <p>fanar.digital</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div class="copyrights">
+            <i class="fa-regular fa-copyright"></i> All rights reserved - Fanar Digital 2024
+        </div>
+
+    </body>
+
+<script src="englishMain.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+            duration: 1500
+        });
+    </script>
+  
+
+</html>
